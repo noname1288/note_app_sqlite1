@@ -92,7 +92,7 @@ class _EditPageState extends State<EditPage> {
               if (value == 1) {
                 await db.deleteNote(id: widget.note!.id!);
               }
-              Navigator.popAndPushNamed(context, '/home');
+              Navigator.popAndPushNamed(context, '/');
             },
           )
         ],

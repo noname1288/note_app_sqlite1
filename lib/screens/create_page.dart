@@ -95,7 +95,7 @@ class _CreateNoteState extends State<CreateNote> {
                       ),
                       ElevatedButton(
                           onPressed: () {
-                            Navigator.pop(context);
+                            Navigator.popAndPushNamed(context,'/');
                           },
                           child: const Text('Cancel'))
                     ],

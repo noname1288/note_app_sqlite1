@@ -25,7 +25,6 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
       initialRoute: '/', // This is the default route.
       routes: {
-        '/home': (context) => HomePage(),
         // Define other routes here
         '/search': (context) => SearchPage(),
         
