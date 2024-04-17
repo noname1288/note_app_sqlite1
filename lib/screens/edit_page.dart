@@ -92,7 +92,7 @@ class _EditPageState extends State<EditPage> {
               if (value == 1) {
                 await db.deleteNote(id: widget.note!.id!);
               }
-              Navigator.pop(context);
+              Navigator.popAndPushNamed(context, '/home');
             },
           )
         ],
@@ -148,7 +148,7 @@ class _EditPageState extends State<EditPage> {
           if (_formKey.currentState!.validate()) {
             _onEdit();
           }
-          Navigator.pop(context);
+          Navigator.popAndPushNamed(context, '/home');
         },
         label: Text('Save Note'),
         icon: Icon(Icons.save),
